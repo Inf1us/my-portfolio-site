@@ -1,0 +1,77 @@
+/* Общий стиль */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
+}
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+h1 {
+    margin: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.section {
+    margin: 50px 0;
+}
+h2 {
+    color: #2a9d8f;
+    border-bottom: 2px solid #2a9d8f;
+    display: inline-block;
+}
+.skills, .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-item, .contact-item {
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+/* Анимация появления */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
